@@ -1,0 +1,96 @@
+/* Login y Registro */
+.auth .panel {
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+}
+
+/* Panel visual */
+.auth-hero {
+    position: relative;
+    background: url('img/modelos4.png') center/cover no-repeat;
+    color: #fff;
+    padding: 28px;
+    min-height: 520px;
+    overflow: hidden;
+    border: none;
+}
+
+.auth-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .55));
+}
+
+.auth-hero>* {
+    position: relative;
+    z-index: 1;
+}
+
+.auth-hero__badge {
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    font-weight: 800;
+    font-size: .75rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+.auth-hero h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0 0 6px;
+}
+
+.auth-hero p {
+    color: #f2f2f2;
+    margin: 0 0 12px;
+}
+
+/* Variante registro */
+.auth-hero--registro {
+    background-image: url('img/modelos5.png');
+}
+
+/* Formulario */
+.auth-card {
+    padding: 28px;
+}
+
+.auth-card .form-label {
+    font-weight: 700;
+}
+
+.auth-card .form-control {
+    border-color: #e6e6e6;
+    border-radius: 12px;
+}
+
+.auth-card .form-control:focus {
+    border-color: #bbb;
+    box-shadow: none;
+}
+
+/* Botón mostrar contraseña */
+.auth-toggle {
+    position: absolute;
+    right: 8px;
+    top: 34px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    line-height: 1;
+    font-size: .8rem;
+}
+
+@media (max-width:992px) {
+    .auth-hero {
+        min-height: 360px;
+        border-radius: 16px;
+    }
+
+    .auth-card {
+        border-radius: 16px;
+    }
+}

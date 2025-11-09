@@ -1,0 +1,59 @@
+/* Cesta */
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 24px;
+    margin: 24px 0 10px;
+
+    @media (max-width:980px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.checkout-summary .item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.checkout-summary .item img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.checkout-summary .meta .name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checkout-summary .meta .price {
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.coupon {
+    display: flex;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.totals {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+    border-top: 1px solid #eee;
+}
+
+.totals li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.totals li.total span {
+    font-weight: 900;
+}

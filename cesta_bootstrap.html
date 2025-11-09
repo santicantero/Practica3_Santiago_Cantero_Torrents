@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pago</title>
+  <link rel="stylesheet" href="bs.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="box d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo">FRESHSTYLE</a>
+      <nav class="actions d-none d-md-flex gap-3">
+        <a href="productos.html">BUSCAR</a>
+        <a href="login.html">INICIAR SESION</a>
+        <a href="registro.html">REGISTRARSE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="box my-4">
+    <div class="row g-3">
+      <section class="col-lg-7">
+        <form class="panel" onsubmit="event.preventDefault(); new bootstrap.Modal('#ok').show();">
+          <h3 class="title-sm mb-2">Pago express</h3>
+          <button class="btn btn-dark mb-3" type="button">Bizum</button>
+
+          <h3 class="title-sm mb-2">Contacto</h3>
+          <input class="form-control mb-3" placeholder="Correo" required>
+
+          <h3 class="title-sm mb-2">Entrega</h3>
+          <div class="row g-2">
+            <div class="col-md-6"><input class="form-control" placeholder="Nombre" required></div>
+            <div class="col-md-6"><input class="form-control" placeholder="Apellido" required></div>
+            <div class="col-md-8"><input class="form-control" placeholder="Dirección" required></div>
+            <div class="col-md-4"><input class="form-control" placeholder="País" required></div>
+            <div class="col-md-4"><input class="form-control" placeholder="C.P" required></div>
+            <div class="col-md-4"><input class="form-control" placeholder="Ciudad" required></div>
+            <div class="col-md-4"><input class="form-control" placeholder="Provincia" required></div>
+            <div class="col-md-6"><input class="form-control" placeholder="Teléfono" required></div>
+          </div>
+
+          <h3 class="title-sm mb-2 mt-3">Pago</h3>
+          <textarea class="form-control" rows="4" placeholder="Notas del pedido (opcional)"></textarea>
+
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-dark">Pagar</button>
+            <a class="btn btn-outline-dark" href="productos.html">Seguir comprando</a>
+          </div>
+        </form>
+      </section>
+
+      <aside class="col-lg-5">
+        <div class="panel">
+          <div class="d-flex gap-3 align-items-center mb-3">
+            <img src="img/modelo6.png" alt="Sudadera granate"
+              style="width:110px;height:130px;object-fit:cover;border-radius:12px;border:1px solid #e6e6e6">
+            <div>
+              <div style="font-size:14px;font-weight:700">SUDADERA DISEÑO FRESHSTYLE</div>
+              <div class="price">TALLA: XL &nbsp;&nbsp; PRECIO: 69,99€</div>
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <input class="form-control" placeholder="CÓDIGO DE DESCUENTO">
+            <button class="btn btn-outline-dark" type="button">Aplicar</button>
+          </div>
+
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">SUBTOTAL <span>69,99€</span></li>
+            <li class="list-group-item d-flex justify-content-between">GASTOS DE ENVÍO <span>GRATIS</span></li>
+            <li class="list-group-item d-flex justify-content-between fw-bold">TOTAL <span>69,99€</span></li>
+          </ul>
+
+          <button class="btn btn-dark w-100" type="button" onclick="new bootstrap.Modal('#ok').show()">Pagar</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div class="modal fade" id="ok" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Operación completada</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">Pago realizado. ¡Gracias por tu compra!</div>
+        <div class="modal-footer"><button class="btn btn-dark" data-bs-dismiss="modal">Aceptar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
