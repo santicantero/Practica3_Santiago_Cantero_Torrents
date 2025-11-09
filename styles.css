@@ -202,6 +202,39 @@ body {
   transform: translateX(-50%)
 }
 
+
+.media {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 18px;
+}
+
+.media--sm {
+  max-width: 640px;
+}
+
+.media video,
+.media audio {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+.media video {
+  aspect-ratio: 9 / 16;
+  max-width: 420px;
+  display: block;
+  margin: 12px auto; 
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background: #000;
+  object-fit: contain; 
+  object-position: center; 
+}
+
 .equipo {
   padding: 48px 0;
   border-top: 1px solid #e6e6e6
