@@ -4,7 +4,6 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
 }
 
-/* Panel visual */
 .auth-hero {
     position: relative;
     background: url('img/modelos4.png') center/cover no-repeat;
@@ -49,12 +48,10 @@
     margin: 0 0 12px;
 }
 
-/* Variante registro */
 .auth-hero--registro {
     background-image: url('img/modelos5.png');
 }
 
-/* Formulario */
 .auth-card {
     padding: 28px;
 }
@@ -73,7 +70,6 @@
     box-shadow: none;
 }
 
-/* Botón mostrar contraseña */
 .auth-toggle {
     position: absolute;
     right: 8px;

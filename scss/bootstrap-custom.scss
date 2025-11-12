@@ -1,8 +1,18 @@
 /* variables → Bootstrap → base → secciones */
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+
 @import "base";
 @import "header";
+
+
 @import "auth";
 @import "promos";
 @import "cesta";
+
+
+@import "home";
+@import "listado";        
+@import "producto-page";
+@import "footer";
+@import "effects";
