@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Niños </title>
+    <link rel="stylesheet" href="bs.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="box">
+            <div class="logo-box">
+                <a href="index.html" class="logo">FRESHSTYLE</a>
+                <nav class="menu">
+                    <a href="productos.html">HOMBRE</a>
+                    <a href="productos.html">MUJER</a>
+                    <a href="niños.html">NIÑOS</a>
+                    <a href="promociones.html">PROMOCIONES</a>
+                </nav>
+            </div>
+            <nav class="actions">
+                <a href="productos.html">BUSCAR</a>
+                <a href="cesta_bootstrap.html">CESTA</a>
+                <a href="login.html">INICIAR SESIÓN</a>
+                <a href="registro.html">REGISTRARSE</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="promo-hero position-relative mb-5">
+        <img src="img/niños.png" class="w-100" alt="Colección Niños FreshStyle">
+        <div class="overlay"></div>
+        <div class="content text-center position-absolute top-50 start-50 translate-middle text-white">
+            <h1 class="fw-bold display-5">Colección Niños</h1>
+            <p class="mb-4">Estilo y comodidad para los más pequeños. ¡Descubre las novedades!</p>
+            <a href="niños.html" class="btn btn-light btn-lg">Explorar colección</a>
+        </div>
+    </section>
+
+    <section class="container mb-4">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-dark d-md-none" data-bs-toggle="offcanvas" data-bs-target="#filtros">
+                    <i class="bi bi-sliders"></i> Filtros
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="filtros">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Filtros</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="mb-3">
+                            <h6>Categorías</h6>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="cat1"><label
+                                    class="form-check-label" for="cat1">Camisetas</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="cat2"><label
+                                    class="form-check-label" for="cat2">Sudaderas</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="cat3"><label
+                                    class="form-check-label" for="cat3">Zapatillas</label></div>
+                        </div>
+                        <div class="mb-3">
+                            <h6>Precio</h6>
+                            <input type="range" class="form-range" min="0" max="100" step="10" id="precio">
+                        </div>
+                        <button class="btn btn-dark w-100" data-bs-dismiss="offcanvas">Aplicar filtros</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="me-2 fw-semibold">Ordenar por:</label>
+                <select class="form-select d-inline-block w-auto">
+                    <option value="destacados">Destacados</option>
+                    <option value="precio">Precio</option>
+                    <option value="nombre">Nombre</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="container mb-5">
+        <div class="row g-4">
+            <!-- Producto 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/niñoCamiseta.png" class="card-img-top" alt="Camiseta niños">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Camiseta Algodón</h5>
+                        <p class="card-text text-muted mb-3">12,99€</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#ok">Añadir a la
+                            cesta</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/niñoSudader.png" class="card-img-top" alt="Sudadera niños">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Sudadera Classic</h5>
+                        <p class="card-text text-muted mb-3">24,99€</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#ok">Añadir a la
+                            cesta</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/zapatillas1.png" class="card-img-top" alt="Zapatillas niños">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Zapatillas Urban</h5>
+                        <p class="card-text text-muted mb-3">39,99€</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#ok">Añadir a la
+                            cesta</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/niñoPantalones.png" class="card-img-top" alt="Pantalón niños">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">Pantalón Sport</h5>
+                        <p class="card-text text-muted mb-3">19,99€</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#ok">Añadir a la
+                            cesta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="ok" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Producto añadido</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">El producto se ha añadido correctamente a tu cesta.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-dark" data-bs-dismiss="modal">Seguir comprando</button>
+                    <a href="cesta_bootstrap.html" class="btn btn-outline-dark">Ver cesta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
